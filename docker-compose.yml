@@ -1,7 +1,11 @@
+# ------------------------------------------------------- #
+# Note: this file originates in action-composite-template #
+# ------------------------------------------------------- #
+
 services:
   # ---- mega-linter ---- #
   lint:
-    image: oxsecurity/megalinter-ci_light:v7.3.0
+    image: oxsecurity/megalinter-documentation:v7.3.0
     volumes:
       - ./:/tmp/lint
     environment:

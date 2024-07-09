@@ -1,9 +1,15 @@
 #!/usr/bin/make
 
+# ------------------------------------------------------- #
+# Note: this file originates in action-composite-template #
+# ------------------------------------------------------- #
+
+# Docker
+
 pull: ## pull latest containers
 	@docker compose pull
 
-lint: ## run mega-linter
+lint: ## run super-linter
 	@docker compose run --rm lint
 
 readme: ## run readme action
